@@ -1,0 +1,113 @@
+/* Basic Reset & Body Styles (Fixed Light Mode) */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Allow content to stack */
+    justify-content: center; /* Center content vertically */
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f9f9f9; /* Light background */
+    color: #333; /* Dark text */
+    /* Transition for theme change removed as there's no toggle */
+}
+
+/* Container Styles */
+.container {
+    background-color: #fff; /* White container */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow only */
+    width: 90%;
+    max-width: 800px;
+    box-sizing: border-box;
+    /* margin-top removed as toggle is gone */
+    /* Transition for box-shadow removed as there's no toggle */
+}
+
+/* Header (H1) Style - Ensure it's centered */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-top: 0; /* Adjust top margin if needed */
+    margin-bottom: 20px; /* Space below the heading */
+    /* Transition for color removed as there's no toggle */
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    /* Transition for color removed as there's no toggle */
+}
+
+.input-section, .output-section {
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    resize: vertical;
+    background-color: #fff;
+    color: #333;
+    /* Transitions removed as no dark mode change */
+}
+
+.language-selection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.language-selection label {
+    margin-right: 10px;
+    font-weight: bold;
+    color: #555;
+    /* Transition removed */
+}
+
+.language-selection select {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #fff;
+    color: #333;
+    /* Transitions removed */
+}
+
+/* Button Styles (All Blue) - Unchanged from previous request */
+button {
+    background-color: black; /* Black */
+    color: white; /* White text for contrast on blue */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.output-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#translatedText {
+    background-color: #f0f0f0; /* Light grey for translated text */
+    color: #333;
+    /* Transitions removed */
+}
+
+/* All Dark Mode Styles and Toggle Switch Styles are removed */
+/* .header-with-toggle is also removed as it's no longer needed */
